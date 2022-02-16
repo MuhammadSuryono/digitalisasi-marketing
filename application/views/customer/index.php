@@ -1,0 +1,92 @@
+ <!-- Begin Page Content -->
+ <div class="container-fluid">
+     <div class="flash-data" data-flashdata="<?php echo $this->session->flashdata('flash'); ?>"></div>
+     <div class="flash-data2" data-flashdata="<?php echo $this->session->flashdata('flash2'); ?>"></div>
+     <!-- Page Heading -->
+     <h1 class="h3 mb-4 text-gray-800">Customer Data</h1>
+     <!-- DataTales Example -->
+     <div class="card shadow mb-4">
+         <div class="card-header py-3">
+             <h6 class="m-0 font-weight-bold text-primary">Data Customer</h6>
+         </div>
+
+         <div class="card-body">
+           <a href="<?php echo base_url('customer/tambah') ?>" class="btn btn-primary mb-5">Add New Customer</a>
+             <div class="table-responsive">
+                 <table class="table table-bordered dt-responsive" id="dataTable" width="100%" cellspacing="0">
+                     <thead>
+                         <tr>
+                             <th>No</th>
+                             <th>Nama </th>
+                             <th>Status</th>
+                             <th>Perusahaan</th>
+                             <th>Dept</th>
+                             <th>Jabatan</th>
+                             <th>Phone 1</th>
+                             <th>Phone 2</th>
+                             <th>Email 1</th>
+                             <th>Email 2</th>
+                             <th>Catatan</th>
+                             <th>Action</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <?php
+                            $no = 1;
+                            foreach ($customer as $data) : ?>
+                         <tr>
+                             <td class="align-middle"><b><?php echo $no ?></b></td>
+                             <td class="align-middle"><?php echo $data['nama_cus'] ?></td>
+                             <td class="align-middle text-center"><?php echo $data['status'] ?></td>
+                             <td class="align-middle"><?php echo $data['perusahaan'] ?></td>
+                             <td class="align-middle text-center"><?php echo $data['dept'] ?></td>
+                             <td class="align-middle text-center"><?php echo $data['jabatan'] ?></td>
+                             <td class="align-middle text-center"><?php $hp1 = $data['hp1'] != null ? $data['hp1'] : '-'; echo $hp1; ?></td>
+                             <td class="align-middle text-center"><?php $hp2 = $data['hp2'] != null ? $data['hp2'] : '-'; echo $hp2; ?></td>
+                             <td class="align-middle text-center"><?php $email1 = $data['email1'] != null ? $data['email1'] : '-'; echo $email1; ?></td>
+                             <td class="align-middle text-center"><?php $email2 = $data['email2'] != null ? $data['email2'] : '-'; echo $email2; ?></td>
+                             <td class="align-middle text-center"><?php $catatan = $data['catatan'] != null ? $data['catatan'] : '-'; echo $catatan; ?></td>
+                             <td class="align-middle text-center">
+                                     <a href="<?php echo base_url(); ?>customer/hapus/<?php echo $data['id_customer']; ?> " class="btn btn-danger btn-sm tombol-hapus" ><i class="fas fa-trash"></i> </a>
+                                     <a href="<?php echo base_url(); ?>customer/ubah/<?php echo $data['id_customer']; ?>" class="btn btn-success btn-sm"><i class="fas fa-pen"></i></a>
+                             </td>
+                         </tr>
+                         <?php
+                            $no++;
+                        endforeach;
+                        ?>
+                     </tbody>
+                 </table>
+             </div>
+         </div>
+     </div>
+
+ </div>
+ <!-- /.container-fluid -->
+
+ </div>
+ <!-- End of Main Content -->
+
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Form Input</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <div class="modal-body">
+                 <form>
+                     <div class="form-group">
+                         <input type="text" name="user" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="User">
+                     </div>
+                 </form>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                 <button type="button" class="btn btn-primary">Save</button>
+             </div>
+         </div>
+     </div>
+ </div>

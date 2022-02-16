@@ -1,0 +1,17 @@
+2019-10-23 08:22:01: -- Analysis Started by Analyze And Sync Command
+2019-10-23 08:22:08: Changes: 2, Conflicts: 0, CopyTime: 0, FixState: 0, Errors: 0, All: 12014
+2019-10-23 08:22:08: Right to Left: Copy File: 2 
+2019-10-23 08:22:08: == Sync Started by Analyze And Sync Command
+2019-10-23 08:22:08: Copy Over '//180.211.92.132/htdocs2/digital-market/application/controllers/StkbPerdin.php' -> 'E:/wamp64/www/digital-market/application/controllers/StkbPerdin.php' (1,366)
+2019-10-23 08:22:08: Copy Over '//180.211.92.132/htdocs2/digital-market/application/views/stkbproject/edit.php' -> 'E:/wamp64/www/digital-market/application/views/stkbproject/edit.php' (6,501)
+2019-10-23 08:22:09: Deleted Recycled: E:/wamp64/www/digital-market/_gsdata_/_saved_/application/views/stkbdasartrk/tambah.php
+2019-10-23 08:22:09: Deleted Recycled: E:/wamp64/www/digital-market/_gsdata_/_saved_/application/controllers/StkbTrk.php
+2019-10-23 08:22:09: Deleted Recycled: E:/wamp64/www/digital-market/_gsdata_/_saved_/application/controllers/StkbDasarTrk.php
+2019-10-23 08:22:09: Deleted Recycled: E:/wamp64/www/digital-market/_gsdata_/_saved_/application/views/user/ubah.php
+2019-10-23 08:22:09: Deleted Recycled: E:/wamp64/www/digital-market/_gsdata_/_saved_/application/models/StkbDasarTrk_model.php
+2019-10-23 08:22:09: Deleted Recycled: E:/wamp64/www/digital-market/_gsdata_/_saved_/application/views/user/index.php
+2019-10-23 08:22:09: Deleted Recycled: E:/wamp64/www/digital-market/_gsdata_/_saved_/application/views/stkbdasartrk/index.php
+2019-10-23 08:22:09: Deleted Recycled: E:/wamp64/www/digital-market/_gsdata_/_saved_/application/views/city/tambah.php
+2019-10-23 08:22:09: Deleted Recycled: E:/wamp64/www/digital-market/_gsdata_/_saved_/application/models/User_model.php
+2019-10-23 08:22:09: == Sync Complete. Time: 00:00:01, Speed: 0 bytes/s, OK: 2, Errors: 0
+2019-10-23 08:22:09: 
